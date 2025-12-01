@@ -15,6 +15,9 @@
   "author": "preeti shukla",
   "license": "ISC",
   "devDependencies": {
-    "nodemon": "^3.1.11"
+    "i": "^0.3.7",
+    "nodemon": "^3.1.11",
+    "npm": "^11.6.4",
+    "prettier": "^3.7.3"
   }
 }

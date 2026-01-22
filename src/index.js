@@ -54,4 +54,13 @@
 import dotenv from "dotenv";
 dotenv.config();
 console.log("MONGO URI:", process.env.MONGODB_URI);
+connectDB()
+.then(()=>{
+    app.listen(process.env.PORT || 8000,()=>{
+        console.log(`server is runnign at port : ${process.env.PORT}`)
+    })
+})
+.catch((err)=>{
+    console.log("MONGO db connection failed",err ); 
+})
 
